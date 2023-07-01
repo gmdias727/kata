@@ -17,7 +17,7 @@ impl BigONotation {
         self.the_array.push(new_item);
         self.array_size = self.the_array.len() as i32;
         self.items_in_array += 1;
-        // println!("{}", new_item);
+        println!("{}", new_item);
         println!("{:?}", self.the_array);
     }
 }
