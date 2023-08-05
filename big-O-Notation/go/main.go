@@ -31,6 +31,10 @@ func main() {
 	testAlgo3.linearSearchForValue(10)
 }
 
+type Something struct {
+  
+}
+
 type BigONotation struct {
 	theArray     []int
 	arraySize    int
