@@ -3,6 +3,7 @@ module hello
 go 1.20
 
 require (
+	github.com/karalabe/usb v0.0.2 // indirect
 	github.com/yuin/goldmark v1.4.13 // indirect
 	golang.org/x/mod v0.12.0 // indirect
 	golang.org/x/sys v0.10.0 // indirect
