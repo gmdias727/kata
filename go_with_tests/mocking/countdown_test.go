@@ -1,14 +1,27 @@
 package main
 
-import "testing"
+import (
+	"bytes"
+	"testing"
+)
 
-func TestSearch(t *testing.T) {
-	dictionary := map[string]string{"test": "this is just a test"}
+func TestCountdown(t *testing.T) {
+	buffer := &bytes.Buffer{}
+	spySleeper := &SpySleeper{}
 
-	got := Search(dictionary, "test")
-	want := "this is just a test"
+	Countdown(buffer, spySleeper)
+
+	got := buffer.String()
+	want := `3
+2
+1
+Go!`
 
 	if got != want {
-		t.Errorf("got %q want %q given, %q", got, want, "test")
+		t.Errorf("got %q want %q", got, want)
+	}
+
+	if spySleeper.Calls != 3 {
+		t.Errorf("not enough calls to sleeper, want 3 got %d", spySleeper.Calls)
 	}
 }
