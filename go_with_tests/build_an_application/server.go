@@ -1,0 +1,3 @@
+package buildanapplication
+
+func PlayerServer() {}
