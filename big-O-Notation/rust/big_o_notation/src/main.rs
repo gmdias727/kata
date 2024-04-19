@@ -24,7 +24,6 @@ impl BigONotation {
 
 
 fn main()   {
-
     let mut my_notation : BigONotation = BigONotation::new();
     my_notation.add_item_to_array(3);
     println!("{:?}", my_notation.add_item_to_array(6));

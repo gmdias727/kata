@@ -1,0 +1,1 @@
+pedir exemplos ao gpt
