@@ -44,3 +44,17 @@ tmp_dir = "tmp"
 [screen]
   clear_on_rebuild = false
   keep_scroll = true
+
+# Watch the main.go file and run `go run main.go` when changes are detected
+[[watcher]]
+dir = "."
+include_ext = ["go"]
+exclude_dir = ["node_modules", "vendor"]
+command = "go run main.go"
+
+# Watch the main.go and main_test.go files and run `go test` when changes are detected
+[[watcher]]
+dir = "."
+include_ext = ["go"]
+exclude_dir = ["node_modules", "vendor"]
+command = "go test"

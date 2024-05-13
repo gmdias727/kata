@@ -1,0 +1,149 @@
+# dune build -w @check @runtest
+# OCAMLPARAM: unset
+# Shared cache: disabled
+# Shared cache location: /home/grande/.cache/dune/db
+# Workspace root: /home/grande/kata/videoDoEdu
+# Auto-detected concurrency: 16
+# Dune context:
+#  { name = "default"
+#  ; kind = "default"
+#  ; profile = Dev
+#  ; merlin = true
+#  ; fdo_target_exe = None
+#  ; build_dir = In_build_dir "default"
+#  ; instrument_with = []
+#  }
+$ /usr/bin/ocamlc.opt -config > /tmp/dune_2db072_output
+$ (cd _build/default && /usr/bin/ocamlc.opt -g -w -24 -I .ppx/0bb5094b13567c3c4e1ee33245b80e63 -I /home/grande/.opam/default/lib/ocaml-compiler-libs/common -I /home/grande/.opam/default/lib/ocaml-compiler-libs/shadow -I /home/grande/.opam/default/lib/ppx_derivers -I /home/grande/.opam/default/lib/ppx_deriving/api -I /home/grande/.opam/default/lib/ppx_deriving/show -I /home/grande/.opam/default/lib/ppxlib -I /home/grande/.opam/default/lib/ppxlib/ast -I /home/grande/.opam/default/lib/ppxlib/astlib -I /home/grande/.opam/default/lib/ppxlib/print_diff -I /home/grande/.opam/default/lib/ppxlib/stdppx -I /home/grande/.opam/default/lib/ppxlib/traverse_builtins -I /home/grande/.opam/default/lib/result -I /home/grande/.opam/default/lib/sexplib0 -I /home/grande/.opam/default/lib/stdlib-shims -I /usr/lib/ocaml/compiler-libs -no-alias-deps -o .ppx/0bb5094b13567c3c4e1ee33245b80e63/dune__exe___ppx.cmo -c -impl .ppx/0bb5094b13567c3c4e1ee33245b80e63/_ppx.ml-gen)
+$ (cd _build/default && /usr/bin/ocamlopt.opt -g -w -24 -I .ppx/0bb5094b13567c3c4e1ee33245b80e63 -I /home/grande/.opam/default/lib/ocaml-compiler-libs/common -I /home/grande/.opam/default/lib/ocaml-compiler-libs/shadow -I /home/grande/.opam/default/lib/ppx_derivers -I /home/grande/.opam/default/lib/ppx_deriving/api -I /home/grande/.opam/default/lib/ppx_deriving/show -I /home/grande/.opam/default/lib/ppxlib -I /home/grande/.opam/default/lib/ppxlib/ast -I /home/grande/.opam/default/lib/ppxlib/astlib -I /home/grande/.opam/default/lib/ppxlib/print_diff -I /home/grande/.opam/default/lib/ppxlib/stdppx -I /home/grande/.opam/default/lib/ppxlib/traverse_builtins -I /home/grande/.opam/default/lib/result -I /home/grande/.opam/default/lib/sexplib0 -I /home/grande/.opam/default/lib/stdlib-shims -I /usr/lib/ocaml/compiler-libs -intf-suffix .ml-gen -no-alias-deps -o .ppx/0bb5094b13567c3c4e1ee33245b80e63/dune__exe___ppx.cmx -c -impl .ppx/0bb5094b13567c3c4e1ee33245b80e63/_ppx.ml-gen)
+$ (cd _build/default && /usr/bin/ocamlopt.opt -g -w -24 -o .ppx/0bb5094b13567c3c4e1ee33245b80e63/ppx.exe /usr/lib/ocaml/compiler-libs/ocamlcommon.cmxa /home/grande/.opam/default/lib/ppx_derivers/ppx_derivers.cmxa /home/grande/.opam/default/lib/ocaml-compiler-libs/common/ocaml_common.cmxa /home/grande/.opam/default/lib/ppxlib/astlib/astlib.cmxa /home/grande/.opam/default/lib/stdlib-shims/stdlib_shims.cmxa /home/grande/.opam/default/lib/ppxlib/ast/ppxlib_ast.cmxa /home/grande/.opam/default/lib/ocaml-compiler-libs/shadow/ocaml_shadow.cmxa /home/grande/.opam/default/lib/ppxlib/print_diff/ppxlib_print_diff.cmxa /home/grande/.opam/default/lib/ppxlib/traverse_builtins/ppxlib_traverse_builtins.cmxa /home/grande/.opam/default/lib/sexplib0/sexplib0.cmxa /home/grande/.opam/default/lib/ppxlib/stdppx/stdppx.cmxa /home/grande/.opam/default/lib/ppxlib/ppxlib.cmxa /home/grande/.opam/default/lib/result/result.cmxa /home/grande/.opam/default/lib/ppx_deriving/api/ppx_deriving_api.cmxa /home/grande/.opam/default/lib/ppx_deriving/show/ppx_deriving_show.cmxa .ppx/0bb5094b13567c3c4e1ee33245b80e63/dune__exe___ppx.cmx)
+$ (cd _build/default && .ppx/0bb5094b13567c3c4e1ee33245b80e63/ppx.exe -o hello.pp.ml --impl hello.ml -corrected-suffix .ppx-corrected -diff-cmd - -dump-ast)
+$ (cd _build/default && .ppx/0bb5094b13567c3c4e1ee33245b80e63/ppx.exe -o hello.pp.ml --impl hello.ml -corrected-suffix .ppx-corrected -diff-cmd - -dump-ast)
+$ (cd _build/default && /usr/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -I .hello.eobjs/byte -I /home/grande/.opam/default/lib/ppx_deriving/runtime -I /home/grande/.opam/default/lib/result -no-alias-deps -opaque -o .hello.eobjs/byte/dune__exe__Hello.cmo -c -impl hello.pp.ml)
+$ (cd _build/default && /usr/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I .hello.eobjs/byte -I .hello.eobjs/native -I /home/grande/.opam/default/lib/ppx_deriving/runtime -I /home/grande/.opam/default/lib/result -intf-suffix .ml -no-alias-deps -opaque -o .hello.eobjs/native/dune__exe__Hello.cmx -c -impl hello.pp.ml)
+$ (cd _build/default && /usr/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -o hello.exe /home/grande/.opam/default/lib/result/result.cmxa /home/grande/.opam/default/lib/ppx_deriving/runtime/ppx_deriving_runtime.cmxa .hello.eobjs/native/dune__exe__Hello.cmx)
+$ (cd _build/default && ./hello.exe)
+> Grande is a bad user, because amou demais
+$ (cd _build/default && .ppx/0bb5094b13567c3c4e1ee33245b80e63/ppx.exe -o hello.pp.ml --impl hello.ml -corrected-suffix .ppx-corrected -diff-cmd - -dump-ast)
+$ (cd _build/default && /usr/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -I .hello.eobjs/byte -I /home/grande/.opam/default/lib/ppx_deriving/runtime -I /home/grande/.opam/default/lib/result -no-alias-deps -opaque -o .hello.eobjs/byte/dune__exe__Hello.cmo -c -impl hello.pp.ml)
+$ (cd _build/default && /usr/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I .hello.eobjs/byte -I .hello.eobjs/native -I /home/grande/.opam/default/lib/ppx_deriving/runtime -I /home/grande/.opam/default/lib/result -intf-suffix .ml -no-alias-deps -opaque -o .hello.eobjs/native/dune__exe__Hello.cmx -c -impl hello.pp.ml)
+$ (cd _build/default && /usr/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -o hello.exe /home/grande/.opam/default/lib/result/result.cmxa /home/grande/.opam/default/lib/ppx_deriving/runtime/ppx_deriving_runtime.cmxa .hello.eobjs/native/dune__exe__Hello.cmx)
+$ (cd _build/default && ./hello.exe)
+> Grande is a bad user, because amou demais
+$ (cd _build/default && .ppx/0bb5094b13567c3c4e1ee33245b80e63/ppx.exe -o hello.pp.ml --impl hello.ml -corrected-suffix .ppx-corrected -diff-cmd - -dump-ast)
+$ (cd _build/default && /usr/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -I .hello.eobjs/byte -I /home/grande/.opam/default/lib/ppx_deriving/runtime -I /home/grande/.opam/default/lib/result -no-alias-deps -opaque -o .hello.eobjs/byte/dune__exe__Hello.cmo -c -impl hello.pp.ml)
+> File "hello.ml", line 35, characters 9-21:
+> 35 | let () = print_status "Grande" (Banned {reason = "amou demais"})
+>               ^^^^^^^^^^^^
+> Error: This function has type user -> unit
+>        It is applied to too many arguments; maybe you forgot a `;'.
+[2]
+$ (cd _build/default && .ppx/0bb5094b13567c3c4e1ee33245b80e63/ppx.exe -o hello.pp.ml --impl hello.ml -corrected-suffix .ppx-corrected -diff-cmd - -dump-ast)
+$ (cd _build/default && /usr/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -I .hello.eobjs/byte -I /home/grande/.opam/default/lib/ppx_deriving/runtime -I /home/grande/.opam/default/lib/result -no-alias-deps -opaque -o .hello.eobjs/byte/dune__exe__Hello.cmo -c -impl hello.pp.ml)
+$ (cd _build/default && /usr/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I .hello.eobjs/byte -I .hello.eobjs/native -I /home/grande/.opam/default/lib/ppx_deriving/runtime -I /home/grande/.opam/default/lib/result -intf-suffix .ml -no-alias-deps -opaque -o .hello.eobjs/native/dune__exe__Hello.cmx -c -impl hello.pp.ml)
+$ (cd _build/default && /usr/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -o hello.exe /home/grande/.opam/default/lib/result/result.cmxa /home/grande/.opam/default/lib/ppx_deriving/runtime/ppx_deriving_runtime.cmxa .hello.eobjs/native/dune__exe__Hello.cmx)
+$ (cd _build/default && ./hello.exe)
+> Grande is a expired user
+$ (cd _build/default && .ppx/0bb5094b13567c3c4e1ee33245b80e63/ppx.exe -o hello.pp.ml --impl hello.ml -corrected-suffix .ppx-corrected -diff-cmd - -dump-ast)
+> File "hello.ml", line 35, characters 45-46:
+> 35 | let () = print_user { name = "Grande"; Banned}
+>                                                   ^
+> Error: Syntax error
+[1]
+$ (cd _build/default && .ppx/0bb5094b13567c3c4e1ee33245b80e63/ppx.exe -o hello.pp.ml --impl hello.ml -corrected-suffix .ppx-corrected -diff-cmd - -dump-ast)
+$ (cd _build/default && /usr/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -I .hello.eobjs/byte -I /home/grande/.opam/default/lib/ppx_deriving/runtime -I /home/grande/.opam/default/lib/result -no-alias-deps -opaque -o .hello.eobjs/byte/dune__exe__Hello.cmo -c -impl hello.pp.ml)
+$ (cd _build/default && /usr/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I .hello.eobjs/byte -I .hello.eobjs/native -I /home/grande/.opam/default/lib/ppx_deriving/runtime -I /home/grande/.opam/default/lib/result -intf-suffix .ml -no-alias-deps -opaque -o .hello.eobjs/native/dune__exe__Hello.cmx -c -impl hello.pp.ml)
+$ (cd _build/default && /usr/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -o hello.exe /home/grande/.opam/default/lib/result/result.cmxa /home/grande/.opam/default/lib/ppx_deriving/runtime/ppx_deriving_runtime.cmxa .hello.eobjs/native/dune__exe__Hello.cmx)
+$ (cd _build/default && ./hello.exe)
+> Grande is a bad user, because amou demais
+$ (cd _build/default && .ppx/0bb5094b13567c3c4e1ee33245b80e63/ppx.exe -o hello.pp.ml --impl hello.ml -corrected-suffix .ppx-corrected -diff-cmd - -dump-ast)
+$ (cd _build/default && /usr/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -I .hello.eobjs/byte -I /home/grande/.opam/default/lib/ppx_deriving/runtime -I /home/grande/.opam/default/lib/result -no-alias-deps -opaque -o .hello.eobjs/byte/dune__exe__Hello.cmo -c -impl hello.pp.ml)
+$ (cd _build/default && /usr/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I .hello.eobjs/byte -I .hello.eobjs/native -I /home/grande/.opam/default/lib/ppx_deriving/runtime -I /home/grande/.opam/default/lib/result -intf-suffix .ml -no-alias-deps -opaque -o .hello.eobjs/native/dune__exe__Hello.cmx -c -impl hello.pp.ml)
+$ (cd _build/default && /usr/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -o hello.exe /home/grande/.opam/default/lib/result/result.cmxa /home/grande/.opam/default/lib/ppx_deriving/runtime/ppx_deriving_runtime.cmxa .hello.eobjs/native/dune__exe__Hello.cmx)
+$ (cd _build/default && ./hello.exe)
+> Grande is a bad user, because amou demaisaaa
+$ (cd _build/default && .ppx/0bb5094b13567c3c4e1ee33245b80e63/ppx.exe -o hello.pp.ml --impl hello.ml -corrected-suffix .ppx-corrected -diff-cmd - -dump-ast)
+$ (cd _build/default && /usr/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -I .hello.eobjs/byte -I /home/grande/.opam/default/lib/ppx_deriving/runtime -I /home/grande/.opam/default/lib/result -no-alias-deps -opaque -o .hello.eobjs/byte/dune__exe__Hello.cmo -c -impl hello.pp.ml)
+$ (cd _build/default && /usr/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I .hello.eobjs/byte -I .hello.eobjs/native -I /home/grande/.opam/default/lib/ppx_deriving/runtime -I /home/grande/.opam/default/lib/result -intf-suffix .ml -no-alias-deps -opaque -o .hello.eobjs/native/dune__exe__Hello.cmx -c -impl hello.pp.ml)
+$ (cd _build/default && /usr/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -o hello.exe /home/grande/.opam/default/lib/result/result.cmxa /home/grande/.opam/default/lib/ppx_deriving/runtime/ppx_deriving_runtime.cmxa .hello.eobjs/native/dune__exe__Hello.cmx)
+$ (cd _build/default && ./hello.exe)
+> Grande is a bad user, because amou demais 
+> aaa
+$ (cd _build/default && .ppx/0bb5094b13567c3c4e1ee33245b80e63/ppx.exe -o hello.pp.ml --impl hello.ml -corrected-suffix .ppx-corrected -diff-cmd - -dump-ast)
+$ (cd _build/default && /usr/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -I .hello.eobjs/byte -I /home/grande/.opam/default/lib/ppx_deriving/runtime -I /home/grande/.opam/default/lib/result -no-alias-deps -opaque -o .hello.eobjs/byte/dune__exe__Hello.cmo -c -impl hello.pp.ml)
+$ (cd _build/default && /usr/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I .hello.eobjs/byte -I .hello.eobjs/native -I /home/grande/.opam/default/lib/ppx_deriving/runtime -I /home/grande/.opam/default/lib/result -intf-suffix .ml -no-alias-deps -opaque -o .hello.eobjs/native/dune__exe__Hello.cmx -c -impl hello.pp.ml)
+$ (cd _build/default && /usr/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -o hello.exe /home/grande/.opam/default/lib/result/result.cmxa /home/grande/.opam/default/lib/ppx_deriving/runtime/ppx_deriving_runtime.cmxa .hello.eobjs/native/dune__exe__Hello.cmx)
+$ (cd _build/default && ./hello.exe)
+> Grande is a bad user, because amou demais 
+> aaa 
+$ (cd _build/default && .ppx/0bb5094b13567c3c4e1ee33245b80e63/ppx.exe -o hello.pp.ml --impl hello.ml -corrected-suffix .ppx-corrected -diff-cmd - -dump-ast)
+$ (cd _build/default && /usr/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -I .hello.eobjs/byte -I /home/grande/.opam/default/lib/ppx_deriving/runtime -I /home/grande/.opam/default/lib/result -no-alias-deps -opaque -o .hello.eobjs/byte/dune__exe__Hello.cmo -c -impl hello.pp.ml)
+$ (cd _build/default && /usr/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I .hello.eobjs/byte -I .hello.eobjs/native -I /home/grande/.opam/default/lib/ppx_deriving/runtime -I /home/grande/.opam/default/lib/result -intf-suffix .ml -no-alias-deps -opaque -o .hello.eobjs/native/dune__exe__Hello.cmx -c -impl hello.pp.ml)
+$ (cd _build/default && /usr/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -o hello.exe /home/grande/.opam/default/lib/result/result.cmxa /home/grande/.opam/default/lib/ppx_deriving/runtime/ppx_deriving_runtime.cmxa .hello.eobjs/native/dune__exe__Hello.cmx)
+$ (cd _build/default && ./hello.exe)
+> Grande is a bad user, because amou demais 
+> aaa
+$ (cd _build/default && .ppx/0bb5094b13567c3c4e1ee33245b80e63/ppx.exe -o hello.pp.ml --impl hello.ml -corrected-suffix .ppx-corrected -diff-cmd - -dump-ast)
+$ (cd _build/default && /usr/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -I .hello.eobjs/byte -I /home/grande/.opam/default/lib/ppx_deriving/runtime -I /home/grande/.opam/default/lib/result -no-alias-deps -opaque -o .hello.eobjs/byte/dune__exe__Hello.cmo -c -impl hello.pp.ml)
+$ (cd _build/default && /usr/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I .hello.eobjs/byte -I .hello.eobjs/native -I /home/grande/.opam/default/lib/ppx_deriving/runtime -I /home/grande/.opam/default/lib/result -intf-suffix .ml -no-alias-deps -opaque -o .hello.eobjs/native/dune__exe__Hello.cmx -c -impl hello.pp.ml)
+$ (cd _build/default && /usr/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -o hello.exe /home/grande/.opam/default/lib/result/result.cmxa /home/grande/.opam/default/lib/ppx_deriving/runtime/ppx_deriving_runtime.cmxa .hello.eobjs/native/dune__exe__Hello.cmx)
+$ (cd _build/default && ./hello.exe)
+> Grande is a bad user, because amou demais 
+> aaa
+$ (cd _build/default && .ppx/0bb5094b13567c3c4e1ee33245b80e63/ppx.exe -o hello.pp.ml --impl hello.ml -corrected-suffix .ppx-corrected -diff-cmd - -dump-ast)
+$ (cd _build/default && /usr/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -I .hello.eobjs/byte -I /home/grande/.opam/default/lib/ppx_deriving/runtime -I /home/grande/.opam/default/lib/result -no-alias-deps -opaque -o .hello.eobjs/byte/dune__exe__Hello.cmo -c -impl hello.pp.ml)
+$ (cd _build/default && /usr/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I .hello.eobjs/byte -I .hello.eobjs/native -I /home/grande/.opam/default/lib/ppx_deriving/runtime -I /home/grande/.opam/default/lib/result -intf-suffix .ml -no-alias-deps -opaque -o .hello.eobjs/native/dune__exe__Hello.cmx -c -impl hello.pp.ml)
+$ (cd _build/default && /usr/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -o hello.exe /home/grande/.opam/default/lib/result/result.cmxa /home/grande/.opam/default/lib/ppx_deriving/runtime/ppx_deriving_runtime.cmxa .hello.eobjs/native/dune__exe__Hello.cmx)
+$ (cd _build/default && ./hello.exe)
+> Grande is a bad user, because amou demais 
+> aaa
+$ (cd _build/default && .ppx/0bb5094b13567c3c4e1ee33245b80e63/ppx.exe -o hello.pp.ml --impl hello.ml -corrected-suffix .ppx-corrected -diff-cmd - -dump-ast)
+$ (cd _build/default && /usr/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -I .hello.eobjs/byte -I /home/grande/.opam/default/lib/ppx_deriving/runtime -I /home/grande/.opam/default/lib/result -no-alias-deps -opaque -o .hello.eobjs/byte/dune__exe__Hello.cmo -c -impl hello.pp.ml)
+> File "hello.ml", line 43, characters 20-26:
+> 43 |   Printf.fprintf oc "%s\n" message
+>                          ^^^^^^
+> Error: This expression has type
+>          ('a -> 'b -> 'c, out_channel, unit, unit, unit, 'a -> 'b -> 'c)
+>          CamlinternalFormatBasics.fmt
+>        but an expression was expected of type
+>          ('a -> 'b -> 'c, out_channel, unit, unit, unit, unit)
+>          CamlinternalFormatBasics.fmt
+>        Type 'a -> 'b -> 'c is not compatible with type unit 
+[2]
+$ (cd _build/default && .ppx/0bb5094b13567c3c4e1ee33245b80e63/ppx.exe -o hello.pp.ml --impl hello.ml -corrected-suffix .ppx-corrected -diff-cmd - -dump-ast)
+$ (cd _build/default && /usr/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -I .hello.eobjs/byte -I /home/grande/.opam/default/lib/ppx_deriving/runtime -I /home/grande/.opam/default/lib/result -no-alias-deps -opaque -o .hello.eobjs/byte/dune__exe__Hello.cmo -c -impl hello.pp.ml)
+$ (cd _build/default && /usr/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I .hello.eobjs/byte -I .hello.eobjs/native -I /home/grande/.opam/default/lib/ppx_deriving/runtime -I /home/grande/.opam/default/lib/result -intf-suffix .ml -no-alias-deps -opaque -o .hello.eobjs/native/dune__exe__Hello.cmx -c -impl hello.pp.ml)
+$ (cd _build/default && /usr/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -o hello.exe /home/grande/.opam/default/lib/result/result.cmxa /home/grande/.opam/default/lib/ppx_deriving/runtime/ppx_deriving_runtime.cmxa .hello.eobjs/native/dune__exe__Hello.cmx)
+$ (cd _build/default && ./hello.exe)
+> Grande is a bad user, because amou demais 
+> aaa
+$ (cd _build/default && .ppx/0bb5094b13567c3c4e1ee33245b80e63/ppx.exe -o hello.pp.ml --impl hello.ml -corrected-suffix .ppx-corrected -diff-cmd - -dump-ast)
+> File "hello.ml", line 46, characters 24-26:
+> 46 |   let ic = open_in file in
+>                              ^^
+> Error: Syntax error
+[1]
+$ (cd _build/default && .ppx/0bb5094b13567c3c4e1ee33245b80e63/ppx.exe -o hello.pp.ml --impl hello.ml -corrected-suffix .ppx-corrected -diff-cmd - -dump-ast)
+$ (cd _build/default && /usr/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -I .hello.eobjs/byte -I /home/grande/.opam/default/lib/ppx_deriving/runtime -I /home/grande/.opam/default/lib/result -no-alias-deps -opaque -o .hello.eobjs/byte/dune__exe__Hello.cmo -c -impl hello.pp.ml)
+> File "hello.ml", line 53, characters 4-18:
+> 53 |     close_in_noerr ic
+>          ^^^^^^^^^^^^^^
+> Error: This function has type in_channel -> unit
+>        It is applied to too many arguments; maybe you forgot a `;'.
+[2]
+$ (cd _build/default && .ppx/0bb5094b13567c3c4e1ee33245b80e63/ppx.exe -o hello.pp.ml --impl hello.ml -corrected-suffix .ppx-corrected -diff-cmd - -dump-ast)
+$ (cd _build/default && /usr/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -I .hello.eobjs/byte -I /home/grande/.opam/default/lib/ppx_deriving/runtime -I /home/grande/.opam/default/lib/result -no-alias-deps -opaque -o .hello.eobjs/byte/dune__exe__Hello.cmo -c -impl hello.pp.ml)
+$ (cd _build/default && /usr/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I .hello.eobjs/byte -I .hello.eobjs/native -I /home/grande/.opam/default/lib/ppx_deriving/runtime -I /home/grande/.opam/default/lib/result -intf-suffix .ml -no-alias-deps -opaque -o .hello.eobjs/native/dune__exe__Hello.cmx -c -impl hello.pp.ml)
+$ (cd _build/default && /usr/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -o hello.exe /home/grande/.opam/default/lib/result/result.cmxa /home/grande/.opam/default/lib/ppx_deriving/runtime/ppx_deriving_runtime.cmxa .hello.eobjs/native/dune__exe__Hello.cmx)
+$ (cd _build/default && ./hello.exe)
+> Hello World!
+> Grande is a bad user, because amou demais 
+> aaa
+$ (cd _build/default && .ppx/0bb5094b13567c3c4e1ee33245b80e63/ppx.exe -o hello.pp.ml --impl hello.ml -corrected-suffix .ppx-corrected -diff-cmd - -dump-ast)
+$ (cd _build/default && /usr/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -I .hello.eobjs/byte -I /home/grande/.opam/default/lib/ppx_deriving/runtime -I /home/grande/.opam/default/lib/result -no-alias-deps -opaque -o .hello.eobjs/byte/dune__exe__Hello.cmo -c -impl hello.pp.ml)
+$ (cd _build/default && /usr/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I .hello.eobjs/byte -I .hello.eobjs/native -I /home/grande/.opam/default/lib/ppx_deriving/runtime -I /home/grande/.opam/default/lib/result -intf-suffix .ml -no-alias-deps -opaque -o .hello.eobjs/native/dune__exe__Hello.cmx -c -impl hello.pp.ml)
+$ (cd _build/default && /usr/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -o hello.exe /home/grande/.opam/default/lib/result/result.cmxa /home/grande/.opam/default/lib/ppx_deriving/runtime/ppx_deriving_runtime.cmxa .hello.eobjs/native/dune__exe__Hello.cmx)
+$ (cd _build/default && ./hello.exe)
+> Hello World!
+> Grande is a bad user, because amou demais 
+> aaa

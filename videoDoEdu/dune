@@ -1,0 +1,9 @@
+(executable
+ (name hello)
+ (preprocess (
+  pps ppx_deriving.show)))
+
+(rule
+ (alias runtest)
+ (deps ./hello.exe)
+ (action (run ./hello.exe)))

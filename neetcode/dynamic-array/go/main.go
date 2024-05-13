@@ -5,8 +5,7 @@ import (
 )
 
 type DynArr struct {
-	arr      []int
-	capacity int
+	arr []int
 }
 
 func main() {
