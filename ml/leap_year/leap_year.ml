@@ -1,6 +1,7 @@
 let () =
   try
-    let year = read_int () in
+    (* let year = read_int () in *)
+    let year = int_of_string Sys.argv.(1) in
     let leap = (year mod 4 = 0 && year mod 100 <> 0) || year mod 400 = 0 in
     if leap then
       Printf.printf "%d is a leap year\n" year

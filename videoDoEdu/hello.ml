@@ -23,6 +23,7 @@ let message_size n =
   Format.printf "constant: %d\n" constant;
   constant * n
 
+
 type status = Valid | Banned of {reason : string} | Expired
 type user = { name: string; status : status; }
 let print_user user =
@@ -35,15 +36,15 @@ let print_user user =
 let () = print_user { name = "Grande"; status = Banned { reason = "amou demais \n"} }
 let () = Format.printf "aaa\n"
 
-let file = "demo.txt"
+let arquivo = "demo.txt"
 let message = "Hello World!"
 
 let () = 
-  let oc = open_out file in
+  let oc = open_out arquivo in
   Printf.fprintf oc "%s\n" message;
   close_out oc;
 
-  let ic = open_in file in
+  let ic = open_in arquivo in
   try
     let line = input_line ic in
     print_endline line;
