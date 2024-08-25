@@ -1,6 +1,8 @@
 package main
 
-func main() {}
+// func main() {
+// 	canConstruct
+// }
 
 func canConstruct(ransomNote string, magazine string) bool {
 	ransomMap := make(map[rune]int)
